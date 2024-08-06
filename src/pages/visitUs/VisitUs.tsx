@@ -1,7 +1,11 @@
 import { Container, Typography, Box } from "@mui/material";
 import react from "react";
+import balaidesa from "../../assets/img/BalaiDesa.png";
 
 function VisitUs() {
+  const handleNavigate = () => {
+    window.open("https://maps.app.goo.gl/s8gZBRobEm2smzZc7", "_blank");
+  };
   return (
     <div>
       <Container maxWidth="xl">
@@ -30,14 +34,8 @@ function VisitUs() {
             alignItems: "center",
           }}
         >
-          <Box
-            sx={{
-              height: "500px",
-              width: "700px",
-              backgroundColor: "black",
-              borderRadius: "20px",
-            }}
-          ></Box>
+          <img src={balaidesa} alt="Balai Desa" style={{ width: "50%" }} onClick={handleNavigate} />
+
           <Box>
             <Typography
               variant="h2"
@@ -54,6 +52,7 @@ function VisitUs() {
           </Box>
         </Box>
       </Container>
+      <Box sx={{ height: "100px" }}></Box>
     </div>
   );
 }
