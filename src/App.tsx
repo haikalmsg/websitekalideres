@@ -69,13 +69,13 @@ function App() {
                     display: { xs: "none", md: "flex" },
                     fontFamily: "monospace",
                     fontWeight: 700,
-                    letterSpacing: ".3rem",
+                    letterSpacing: "0 rem",
                     color: "white",
                     textDecoration: "none",
 
                   }}
                 >
-                  LOGO
+                  Kalideres
                 </Typography>
               </Link>
 
