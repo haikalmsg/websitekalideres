@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material";
+import { Box, Button, Container } from "@mui/material";
 import react from "react";
 import Typography from "@mui/material/Typography";
 import placeHolder from "../../assets/img/istockphoto-1409329028-612x612.jpg";
@@ -29,20 +29,66 @@ function FasilitasPublic() {
             },
           }}
         >
-          <img src={placeHolder} style={{ maxHeight: "250px" }}></img>
+          <img
+            src={placeHolder}
+            style={{ maxHeight: "250px", borderRadius: "20px" }}
+          ></img>
           <Box>
-            <Typography variant="h3" sx={{ fontWeight: "bold" }}>
-              Balai Desa
-            </Typography>
-            <Typography sx={{ fontSize: "20px", mt: "10px" }}>
+            <Box sx={{display : "flex", gap : "20px"}}>
+              <Typography variant="h3" sx={{ fontWeight: "bold" }}>
+                Balai Desa
+              </Typography>
+            </Box>
+            <Typography
+              sx={{ fontSize: "20px", mt: "10px", textAlign: "justify" }}
+            >
               {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Balai Desa Kalideres, pusat pemerintahan desa di jantung Desa
+              Kalideres, dipimpin oleh Ibu Suherni yang berdedikasi. Di sini,
+              berbagai kegiatan administrasi dan pelayanan publik dilakukan
+              dengan efisien. Ruang-ruang balai desa juga sering digunakan untuk
+              pertemuan komunitas dan acara sosial. Ibu Suherni dan timnya aktif
+              mengelola program-program yang bertujuan meningkatkan kualitas
+              hidup warga desa, menjadikan balai desa sebagai pusat penting
+              dalam pembangunan dan kesejahteraan masyarakat.
+            </Typography>
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            mt: "50px",
+            gap: "50px",
+            border: "1px solid gray",
+            p: "25px",
+            borderRadius: "10px",
+            "&:hover": {
+              cursor: "pointer",
+            },
+          }}
+        >
+          <img
+            src={placeHolder}
+            style={{ maxHeight: "250px", borderRadius: "20px" }}
+          ></img>
+          <Box>
+            <Box sx={{display : "flex", gap : "20px"}}>
+              <Typography variant="h3" sx={{ fontWeight: "bold" }}>
+                Masjid At-Taqwa
+              </Typography>
+            </Box>
+            <Typography
+              sx={{ fontSize: "20px", mt: "10px", textAlign: "justify" }}
+            >
+              {" "}
+              Balai Desa Kalideres, pusat pemerintahan desa di jantung Desa
+              Kalideres, dipimpin oleh Ibu Suherni yang berdedikasi. Di sini,
+              berbagai kegiatan administrasi dan pelayanan publik dilakukan
+              dengan efisien. Ruang-ruang balai desa juga sering digunakan untuk
+              pertemuan komunitas dan acara sosial. Ibu Suherni dan timnya aktif
+              mengelola program-program yang bertujuan meningkatkan kualitas
+              hidup warga desa, menjadikan balai desa sebagai pusat penting
+              dalam pembangunan dan kesejahteraan masyarakat.
             </Typography>
           </Box>
         </Box>
